@@ -7,6 +7,16 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.primary,
     textDecoration: "none",
   },
+  grid: {
+    display: "flex",
+    flexWrap: "wrap",
+    alignContent: "center",
+    justifyContent: "start",
+  },
+  input: {
+    display: "flex",
+    minWidth: "300px",
+  },
 }));
 
 export { useStyles };

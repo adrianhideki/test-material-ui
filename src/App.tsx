@@ -9,7 +9,11 @@ function App() {
   return (
     <div className={classes.root}>
       <AppBar />
-      <RangeBox label="Faixa:" />
+      <div className={classes.grid}>
+        <RangeBox label="Faixa:" width="400px" className={classes.input} />
+        <RangeBox label="Faixa:" width="400px" className={classes.input} />
+        <RangeBox label="Faixa:" width="400px" className={classes.input} />
+      </div>
     </div>
   );
 }

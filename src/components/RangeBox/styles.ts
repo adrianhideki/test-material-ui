@@ -6,7 +6,6 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    width: theme.spacing(50),
   },
   input: {
     margin: "5px",

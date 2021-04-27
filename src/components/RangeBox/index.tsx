@@ -9,7 +9,7 @@ export type RangeBoxProps = {
   label: string;
 } & BoxProps;
 
-const RangeBox = ({ label, ...props }: RangeBoxProps) => {
+const RangeBox = ({ label, className, ...props }: RangeBoxProps) => {
   const classes = useStyles();
   const ValidationTextField = withStyles({
     root: {
@@ -22,7 +22,7 @@ const RangeBox = ({ label, ...props }: RangeBoxProps) => {
   })(TextField);
 
   return (
-    <Box className={classes.root} {...props}>
+    <Box className={`${classes.root} ${className}`} {...props}>
       <Typography className={classes.label}>{label}</Typography>
 
       <ValidationTextField
